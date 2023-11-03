@@ -1,12 +1,12 @@
-import './App.css';
+import cn from "classnames";
+import styles from './App.module.css';
 
 import React from 'react';
+import PeoplePage from "../PeoplePage";
 
 const App = () => {
   return (
-      <div>
-
-      </div>
+      <PeoplePage/>
   );
 };
 
