@@ -1,4 +1,4 @@
-import {URL_IMG_PERSON, GUIDE_IMG_EXTENSION} from "../constans/api";
+import {URL_IMG_PERSON, GUIDE_IMG_EXTENSION} from "../constants/api";
 
 
 const getId = (url, category) => url.split('/').filter(Number).join();
