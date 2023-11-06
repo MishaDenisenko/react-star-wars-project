@@ -15,8 +15,8 @@ const App = () => {
                 <Header/>
 
                 <Routes>
-                    {routesConfig.map(({path, element}, index) => (
-                            <Route key={index} path={path} element={element}/>
+                    {routesConfig.map(({routePath, element}, index) => (
+                            <Route key={index} path={routePath} element={element}/>
                         ))}
                 </Routes>
             {/*</div>*/}
