@@ -9,11 +9,11 @@ import {getPeopleId, getPeopleImg, getPeoplePageId} from "../../services/getPeop
 import {useQueryParams} from "../../hooks/useQueryParams";
 
 import PeopleList from "../../components/PeoplePage/PeopleList";
+import PeopleNavigation from "../../components/PeoplePage/PeopleNavigation";
 
 import {API_PEOPLE} from "../../constants/api";
 
 import styles from "./PeoplePage.module.css";
-import PeopleNavigation from "../../components/PeoplePage/PeopleNavigation";
 
 
 const PeoplePage = ({setErrorApi}) => {
