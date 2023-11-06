@@ -10,17 +10,17 @@ import styles from './App.module.css';
 
 const App = () => {
     return (
-        <BrowserRouter>
-            {/*<div className={styles.wrapper}>*/}
+        <div className={styles.wrapper}>
+            <BrowserRouter>
                 <Header/>
 
                 <Routes>
                     {routesConfig.map(({routePath, element}, index) => (
-                            <Route key={index} path={routePath} element={element}/>
-                        ))}
+                        <Route key={index} path={routePath} element={element}/>
+                    ))}
                 </Routes>
-            {/*</div>*/}
-        </BrowserRouter>
+            </BrowserRouter>
+        </div>
     );
 };
 
