@@ -4,22 +4,26 @@ import NotFoundPage from "../containers/NotFoundPage";
 
 const routesConfig = [
     {
-        path: '/',
+        routePath: '/',
+        navPath: '/',
         element: <HomePage/>,
         title: 'HomePage'
     },
     {
-        path: "/people",
+        routePath: '/people',
+        navPath: '/people/?page=1',
         element: <PeoplePage/>,
         title: 'PeoplePage'
     },
     {
-        path: "/not-found",
+        routePath: '/not-found',
+        navPath: '/not-found',
         element: <NotFoundPage/>,
         title: 'Not Found'
     },
     {
-        path: "/*",
+        routePath: '/*',
+        navPath: '',
         element: <NotFoundPage/>,
         title: ''
     },
