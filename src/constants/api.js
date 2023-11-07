@@ -1,7 +1,8 @@
 export const SWAPI_URL = 'https://swapi.dev/api';
-export const SWAPI_PEOPLE = '/people/';
-export const SWAPI_PARAM_PAGE = '?page=';
+export const SWAPI_PEOPLE = '/people';
+export const SWAPI_PARAM_PAGE = '/?page=';
 export const API_PEOPLE = SWAPI_URL+SWAPI_PEOPLE+SWAPI_PARAM_PAGE;
+export const API_PERSON = SWAPI_URL+SWAPI_PEOPLE;
 
 const GUIDE_URL = 'https://starwars-visualguide.com/assets/img/';
 const GUIDE_PEOPLE = 'characters';
