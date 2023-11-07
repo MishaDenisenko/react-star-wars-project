@@ -1,19 +1,26 @@
 import HomePage from "../containers/HomePage";
-import PeoplePage from "../containers/PeoplePage";
 import NotFoundPage from "../containers/NotFoundPage";
+import PeoplePage from "../containers/PeoplePage";
+import PersonPage from "../containers/PersonPage";
 
 const routesConfig = [
     {
         routePath: '/',
         navPath: '/',
         element: <HomePage/>,
-        title: 'HomePage'
+        title: 'Home'
     },
     {
         routePath: '/people',
         navPath: '/people/?page=1',
         element: <PeoplePage/>,
-        title: 'PeoplePage'
+        title: 'People'
+    },
+    {
+        routePath: '/people/:id',
+        navPath: '',
+        element: <PersonPage/>,
+        title: ''
     },
     {
         routePath: '/not-found',
