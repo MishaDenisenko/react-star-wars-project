@@ -1,5 +1,4 @@
 import UiButton from "./UiButton";
-import PropTypes from "prop-types";
 
 export default {
     title: 'Ui-Kit/UiButton',
