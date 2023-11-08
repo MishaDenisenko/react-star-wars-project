@@ -12,12 +12,14 @@ import styles from './PersonPage.module.css';
 import PersonPhoto from '../../components/PersonPage/PersonPhoto';
 import {getPeopleImg} from '../../services/getPeopleData';
 import PersonLinkBack from '../../components/PersonPage/PersonLinkBack';
+import PersonFilms from '../../components/PersonPage/PersonFilms';
 
 
 const PersonPage = ({ setErrorApi }) => {
     const [personInfo, setPersonInfo] = useState(null);
     const [personName, setPersonName] = useState(null);
     const [personPhoto, setPersonPhoto] = useState(null);
+    const [personFilms, setPersonFilms] = useState(null);
     
     const { id } = useParams();
     
@@ -38,9 +40,8 @@ const PersonPage = ({ setErrorApi }) => {
                 
                 setPersonName(res.name);
                 setPersonPhoto(getPeopleImg(id));
+                res.films.length && setPersonFilms(res.films);
             }
-            
-            console.log(personInfo);
             
             setErrorApi(!res);
         })();
@@ -57,6 +58,7 @@ const PersonPage = ({ setErrorApi }) => {
                     
                     <PersonPhoto personName={ personName } personPhoto={ personPhoto }/>
                     { personInfo && <PersonInfo personInfo={ personInfo }/> }
+                    { personFilms && <PersonFilms personFilms={ personFilms }/> }
                 </div>
             </div>
         </>
