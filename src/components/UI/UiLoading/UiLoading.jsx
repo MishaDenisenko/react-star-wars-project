@@ -22,7 +22,7 @@ const UiLoading = ({ theme='white', isShadow=true, classes }) => {
     useEffect(() => setLoaderIcon(themeLoader[theme]), [])
     
     return (
-        <img className={cn(styles.loader, isShadow && styles.shadow)} src={loaderIcon || loaderWhite} alt={'Loader'}/>
+        <img className={cn(styles.loader, isShadow && styles.shadow)} src={loaderIcon} alt={'Loader'}/>
     );
 };
 
