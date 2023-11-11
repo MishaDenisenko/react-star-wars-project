@@ -3,6 +3,8 @@ import {NavLink} from 'react-router-dom';
 
 import routesConfig from '../../routes/routesConfig';
 
+import Favorite from '../Favorite';
+
 import styles from './Header.module.css';
 
 
@@ -15,6 +17,7 @@ const Header = () => {
                 )) }
             </ul>
         
+            <Favorite/>
         </div>
     );
 };
