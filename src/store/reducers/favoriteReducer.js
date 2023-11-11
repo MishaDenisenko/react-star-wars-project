@@ -1,13 +1,13 @@
-import {ADD_PERSON_TO_FAVOURITE, REMOVE_PERSON_FROM_FAVOURITE} from '../constans';
+import {ADD_PERSON_TO_FAVORITE, REMOVE_PERSON_FROM_FAVORITE} from '../constans';
 
-const favouriteReducer = (state, action) => {
+const favoriteReducer = (state, action) => {
     switch (action.type) {
-        case ADD_PERSON_TO_FAVOURITE:
+        case ADD_PERSON_TO_FAVORITE:
             return {
                 ...state,
                 ...action.payload
             }
-        case REMOVE_PERSON_FROM_FAVOURITE:
+        case REMOVE_PERSON_FROM_FAVORITE:
             return {
                 ...state,
                 ...action.payload
@@ -16,4 +16,4 @@ const favouriteReducer = (state, action) => {
     }
 }
 
-export default favouriteReducer;
+export default favoriteReducer;
