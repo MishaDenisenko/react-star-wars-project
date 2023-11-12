@@ -3,6 +3,7 @@ import NotFoundPage from "../containers/NotFoundPage";
 import PeoplePage from "../containers/PeoplePage";
 import PersonPage from "../containers/PersonPage";
 import FavoritesPage from '../containers/FavoritesPage';
+import SearchPage from '../containers/SearchPage';
 
 const routesConfig = [
     {
@@ -28,6 +29,12 @@ const routesConfig = [
         navPath: '',
         element: <FavoritesPage/>,
         title: ''
+    },
+    {
+        routePath: '/search',
+        navPath: '/search',
+        element: <SearchPage/>,
+        title: 'Search'
     },
     {
         routePath: '/not-found',
