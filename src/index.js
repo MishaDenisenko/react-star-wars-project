@@ -8,10 +8,13 @@ import store from './store';
 
 
 import './styles/index.css';
+import {ThemProvider} from './context/providers/ThemProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-        <App />
+        <ThemProvider>
+            <App />
+        </ThemProvider>
     </Provider>
 );
