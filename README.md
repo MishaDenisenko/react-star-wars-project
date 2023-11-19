@@ -1,5 +1,8 @@
 # 🪐 Star Wars Application
 
+## Project
+- [https://mishadenisenko.github.io/react-star-wars-project/](https://mishadenisenko.github.io/react-star-wars-project/)
+
 ## Available Scripts and Commands
 
 ```bash
